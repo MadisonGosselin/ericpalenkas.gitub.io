@@ -2,14 +2,16 @@
     --bkgrndClr: rgb(130, 205, 255);
     --topBarClr: rgb(49, 173, 255);
     --textClr: white;
-    --hoverTextClr: rgb(21, 161, 255);
+    --hoverTextClr: rgb(0, 136, 226);
     /* #f3b87d */
 }
 
 body {
     background-color: var(--bkgrndClr);
+    font-size: 18px;
     text-align: center;
     color: var(--textClr);
+    user-select: none;
 }
 
 /* navigation */
