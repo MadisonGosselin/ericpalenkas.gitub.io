@@ -1,19 +1,24 @@
 :root {
     --bkgrndClr: rgb(130, 205, 255);
-    --topBarClr: rgb(72, 182, 255);
+    --topBarClr: rgb(49, 173, 255);
     --textClr: white;
     --hoverTextClr: rgb(21, 161, 255);
+    /* #f3b87d */
 }
 
 body {
     background-color: var(--bkgrndClr);
     text-align: center;
+    color: var(--textClr);
 }
 
+/* navigation */
 .nav {
     background-color: var(--topBarClr);
-    position: -webkit-sticky;
-    display: inline-block;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: block;
     padding: 20px;
     border-radius: 0px 0px 20px 20px;
 }
