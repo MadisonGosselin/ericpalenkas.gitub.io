@@ -1,0 +1,32 @@
+:root {
+    --bkgrndClr: rgb(130, 205, 255);
+    --topBarClr: rgb(72, 182, 255);
+    --textClr: white;
+    --hoverTextClr: rgb(21, 161, 255);
+}
+
+body {
+    background-color: var(--bkgrndClr);
+    text-align: center;
+}
+
+.nav {
+    background-color: var(--topBarClr);
+    position: -webkit-sticky;
+    display: inline-block;
+    padding: 20px;
+    border-radius: 0px 0px 20px 20px;
+}
+
+.navEle {
+    text-decoration: none;
+    color: var(--textClr);
+    margin: 15px;
+    padding: 15px;
+}
+
+.navEle:hover {
+    color: var(--textClr);
+    background-color: var(--hoverTextClr);
+    border-radius: 5px;
+}
