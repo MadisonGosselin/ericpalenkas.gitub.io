@@ -1,9 +1,16 @@
 :root {
     --bkgrndClr: rgb(130, 205, 255);
-    --topBarClr: rgb(49, 173, 255);
-    --textClr: white;
-    --hoverTextClr: rgb(0, 136, 226);
+    --topBarClr: rgb(69, 180, 255);
+    --textClr: black;
+    --hoverTextClr: rgb(49, 173, 255);
     /* #f3b87d */
+}
+
+.darkMode {
+    --bkgrndClr: rgb(0, 21, 36);
+    --topBarClr: rgb(0, 52, 87);
+    --textClr: white;
+    --hoverTextClr: rgb(0, 75, 126);
 }
 
 body {
@@ -30,10 +37,28 @@ body {
     color: var(--textClr);
     margin: 15px;
     padding: 15px;
+    font-weight: bold;
 }
 
 .navEle:hover {
     color: var(--textClr);
     background-color: var(--hoverTextClr);
     border-radius: 5px;
+}
+
+.modeSwitcher {
+    position: absolute;
+    z-index: 1;
+    top: 6;
+    right: 15;
+    text-decoration: none;
+    font-size: 35px;
+    cursor: pointer;
+}
+
+.banner {
+    width: 90%;
+    margin-top: 7%;
+    border-radius: 50px;
+    border: 4px solid var(--textClr);
 }
