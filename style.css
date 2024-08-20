@@ -1,19 +1,21 @@
 :root {
-    --bkgrndClr: rgb(130, 205, 255);
-    --topBarClr: rgb(69, 180, 255);
-    --textClr: black;
-    --hoverTextClr: rgb(49, 173, 255);
+    --bkgrndClr: rgb(253, 253, 253);
+    --topBarClr: rgb(123, 202, 255);
+    --textClr: rgb(0, 92, 153);
+    --hoverTextClr: rgb(134, 207, 255);
+    --resumeOverlay: rgba(0, 92, 153, 0.527);
     /* #f3b87d */
 }
 
 .darkMode {
-    --bkgrndClr: rgb(0, 21, 36);
+    --bkgrndClr: rgb(0, 0, 0);
     --topBarClr: rgb(0, 52, 87);
-    --textClr: white;
+    --textClr: rgb(234, 247, 255);
     --hoverTextClr: rgb(0, 75, 126);
 }
 
 body {
+    scroll-behavior: smooth;
     background-color: var(--bkgrndClr);
     font-size: 18px;
     text-align: center;
@@ -30,6 +32,7 @@ body {
     display: block;
     padding: 20px;
     border-radius: 0px 0px 20px 20px;
+    box-shadow: 0 2px 8px 0 var(--textClr);
 }
 
 .navEle {
@@ -44,21 +47,50 @@ body {
     color: var(--textClr);
     background-color: var(--hoverTextClr);
     border-radius: 5px;
+    box-shadow: 0 2px 5px 0 var(--textClr);
 }
 
 .modeSwitcher {
-    position: absolute;
+    position: fixed;
     z-index: 1;
-    top: 6;
+    top: 5;
     right: 15;
     text-decoration: none;
     font-size: 35px;
     cursor: pointer;
 }
 
+.modeSwitcher:hover {
+    border-radius: 5px;
+    box-shadow: 0 2px 5px 0 var(--textClr);
+    background-color: var(--hoverTextClr);
+}
+
+/* home */
 .banner {
-    width: 90%;
-    margin-top: 7%;
+    width: 95%;
+    margin-top: 12%;
     border-radius: 50px;
     border: 4px solid var(--textClr);
+}
+
+/* resume */
+.modal {
+    opacity: 0;
+    display: block;
+    position: fixed;
+    z-index: 2;
+    background-color: var(--resumeOverlay);
+}
+
+.modalContent {
+    margin: auto;
+    padding: 20px;
+    margin-top: 75px;
+}
+
+.resume {
+    width: 60%;
+    height: 90%;
+    margin-top: 45px;
 }

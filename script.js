@@ -14,3 +14,16 @@ switcher.addEventListener("click", () => {
         mode = "light";
     }
 });
+
+const openResume = document.querySelector(".openResume");
+const modal = document.querySelector(".modal");
+const resume = document.querySelector(".resume");
+
+openResume.addEventListener("click", () => {
+    modal.style.display = "block";
+});
+
+resume.addEventListener("mouseleave", () => {
+    modal.style.opacity = 0;
+    modal.style.transition = "0.5s";
+});
