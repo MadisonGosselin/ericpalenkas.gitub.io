@@ -73,24 +73,3 @@ body {
     border-radius: 50px;
     border: 4px solid var(--textClr);
 }
-
-/* resume */
-.modal {
-    opacity: 0;
-    display: block;
-    position: fixed;
-    z-index: 2;
-    background-color: var(--resumeOverlay);
-}
-
-.modalContent {
-    margin: auto;
-    padding: 20px;
-    margin-top: 75px;
-}
-
-.resume {
-    width: 60%;
-    height: 90%;
-    margin-top: 45px;
-}
