@@ -2,7 +2,7 @@
     --bkgrndClr: rgb(253, 253, 253);
     --topBarClr: rgb(123, 202, 255);
     --textClr: rgb(0, 92, 153);
-    --hoverClr: rgb(134, 207, 255);
+    --hoverClr: rgb(162, 218, 255);
     --contentClr: rgb(194, 230, 255);
     /* #f3b87d */
 }
@@ -34,6 +34,7 @@ body {
     padding: 20px;
     border-radius: 0px 0px 20px 20px;
     box-shadow: 0 2px 8px 0 var(--textClr);
+    z-index: 1;
 }
 
 .navEle {
@@ -86,7 +87,6 @@ body {
 }
 
 .flipBoxInner {
-    position: relative;
     width: 100%;
     height: 100%;
     text-align: center;
@@ -109,10 +109,12 @@ body {
 
 .flipBoxFront {
     background-color: var(--topBarClr);
+    border-radius: 30px;
 }
 
 .flipBoxBack {
     background-color: var(--hoverClr);
+    border-radius: 30px;
     transform: rotateX(180deg);
     padding: 15px;
 }
