@@ -3,7 +3,8 @@
     --topBarClr: rgb(123, 202, 255);
     --textClr: rgb(0, 92, 153);
     --hoverClr: rgb(162, 218, 255);
-    --contentClr: rgb(194, 230, 255);
+    --frontFlipBox: rgb(218, 240, 255);
+    --certContentClr: rgb(194, 230, 255);
     /* #f3b87d */
 }
 
@@ -12,7 +13,8 @@
     --topBarClr: rgb(0, 52, 87);
     --textClr: rgb(234, 247, 255);
     --hoverClr: rgb(0, 75, 126);
-    --contentClr: rgb(36, 135, 201);
+    --frontFlipBox: rgb(22, 129, 196);
+    --certContentClr: rgb(36, 135, 201);
 }
 
 body {
@@ -80,8 +82,8 @@ body {
 .flipBox {
     display: inline-block;
     background-color: transparent;
-    width: 300px;
-    height: 300px;
+    width: 200px;
+    height: 200px;
     perspective: 1000px;
     margin: 20px;
 }
@@ -108,21 +110,23 @@ body {
 }
 
 .flipBoxFront {
-    background-color: var(--topBarClr);
-    border-radius: 30px;
+    background-color: var(--frontFlipBox);
+    border-radius: 15px;
+    box-shadow: 0 2px 5px 0 var(--textClr);
 }
 
 .flipBoxBack {
     background-color: var(--hoverClr);
-    border-radius: 30px;
+    border-radius: 15px;
+    box-shadow: 0 2px 5px 0 var(--textClr);
     transform: rotateX(180deg);
     padding: 15px;
 }
 
 .employmentImg {
-    height: 250px;
-    border-radius: 20px;
-    margin-top: 20px;
+    height: 150px;
+    border-radius: 15px;
+    margin-top: 22px;
 }
 
 /* certifications */
@@ -146,7 +150,7 @@ body {
     border-radius: 0px 0px 5px 5px;
     width: 73%;
     overflow: hidden;
-    background-color: var(--contentClr);
+    background-color: var(--certContentClr);
 }
 
 .certText {
