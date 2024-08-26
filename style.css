@@ -161,9 +161,8 @@ body {
 
 .certImg {
     height: 500px;
-    margin: 15px;
     float: left;
-    border-radius: 50px;
+    border-radius: 30px;
     box-shadow: 0 4px 8px 0 var(--textClr);
 }
 
