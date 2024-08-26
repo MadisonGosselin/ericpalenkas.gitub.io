@@ -1,3 +1,4 @@
+// Dark Mode Switcher
 const body = document.querySelector("body");
 const switcher = document.querySelector(".modeSwitcher");
 
@@ -27,8 +28,24 @@ switcher.addEventListener("click", () => {
     mode = localStorage.getItem("currMode");
 });
 
+// Collapsible
 const collapsible = document.querySelectorAll(".collapsible");
-console.log(collapsible);
+const openAll = document.querySelector(".openAll");
+const collapseAll = document.querySelector(".collapseAll");
+
+openAll.addEventListener("click", () => {
+    collapsible.forEach((section) => {
+        section.classList.add("active");
+        section.nextElementSibling.style.display = "inline-block";
+    });
+});
+
+collapseAll.addEventListener("click", () => {
+    collapsible.forEach((section) => {
+        section.classList.remove("active");
+        section.nextElementSibling.style.display = "none";
+    });
+});
 
 collapsible.forEach((section) => {
     section.addEventListener("click", () => {
@@ -38,10 +55,5 @@ collapsible.forEach((section) => {
             content.style.display = "none";
         else content.style.display = "inline-block";
     });
-});
-
-const test = document.querySelector(".certImg");
-test.addEventListener("click", () => {
-    console.log("here");
 });
 

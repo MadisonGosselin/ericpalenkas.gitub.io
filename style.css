@@ -130,6 +130,24 @@ body {
 }
 
 /* certifications */
+.openAll,
+.collapseAll {
+    color: var(--textClr);
+    background-color: var(--topBarClr);
+    box-shadow: 0 2px 5px 0 var(--textClr);
+    display: inline-block;
+    height: 36px;
+    width: 36px;
+    margin: 15px;
+    border: none;
+    border-radius: 5px;
+}
+
+.openAll:hover,
+.collapseAll:hover {
+    background-color: var(--certContentClr);
+}
+
 .collapsible {
     background-color: var(--topBarClr);
     color: var(--textClr);
